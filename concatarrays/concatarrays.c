@@ -15,7 +15,7 @@ char* concat_array(char array1[], unsigned int dim1,char array2[],unsigned int d
 	{
 	unsigned int dim = dim1 + dim2;
 	char* result = malloc(sizeof(char)*dim);
-
+	if (result == NULL) { perror("Malloc ha restituito errore!"); return NULL;}
 	for(int i = 0; i < dim; i++)
 	{
 		if (i < dim1) { result[i] = array1[i];}
@@ -28,6 +28,7 @@ char* costruisci_array(unsigned int dim)
 	{
 
 	char* array = malloc(sizeof(char)*dim);
+	if (array == NULL) { perror("Malloc ha restituito errore!"); return NULL;}
 	int error = 0;
 			printf("Inserisci i valori dell'array!\n");
 
