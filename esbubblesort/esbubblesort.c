@@ -25,7 +25,9 @@ void stampaarray(int* array,unsigned int dim)
 
 	printf("%d",i);
     int c = array[i];
-    while (c >=  1) {printf(" "); c = c/10;}
+    do {printf(" "); c = c/10;}
+    while (c >=  1);
+
 	}
 	printf("\n");
 	printf("Valori: ");
