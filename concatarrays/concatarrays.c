@@ -11,6 +11,7 @@ void stampa_array(char* array,unsigned int dim)
 	printf("\n\n");
 
 	}
+
 char* concat_array(char array1[], unsigned int dim1,char array2[],unsigned int dim2)
 	{
 	unsigned int dim = dim1 + dim2;
@@ -24,6 +25,7 @@ char* concat_array(char array1[], unsigned int dim1,char array2[],unsigned int d
 	return result;
 
 	}
+
 char* costruisci_array(unsigned int dim)
 	{
 
@@ -42,7 +44,6 @@ char* costruisci_array(unsigned int dim)
 				}
 	return array;
 	}
-
 
 int main()
 	{
