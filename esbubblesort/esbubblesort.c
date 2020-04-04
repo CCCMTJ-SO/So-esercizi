@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void bubblesort(int* array,unsigned int dim)
+void bubble_sort(int* array,unsigned int dim)
 {
 if (dim == 1) return;
 	for(int i = 0; i < dim-1; i++)
@@ -13,11 +13,11 @@ if (dim == 1) return;
 	     array[i+1] = temp;
 		}
 	}
-if (dim >= 1){bubblesort(array,dim-1);}
+if (dim >= 1){bubble_sort(array,dim-1);}
 
 }
 
-void stampaarray(int* array,unsigned int dim)
+void stampa_array(int* array,unsigned int dim)
 {
 	printf("Indice: ");
 	for(int i = 0; i < dim;i++)
@@ -68,11 +68,11 @@ int main()
 				}
 
 			printf("Ecco l'array: \n");
-			stampaarray(array,dim);
+			stampa_array(array,dim);
 
 			printf("Ecco l'array ordinato: \n");
-			bubblesort(array,dim);
-			stampaarray(array,dim);
+			bubble_sort(array,dim);
+			stampa_array(array,dim);
 
 return 0;
 }
